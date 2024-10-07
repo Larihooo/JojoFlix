@@ -1,26 +1,55 @@
 body {
     background-color: rgb(1, 1, 56);
-    font-size: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px; 
+    line-height: 1.6; 
+    margin: 0;
+    padding: 0;
 }
 
 .cabeçalho {
-    color: white;
+    background-color: #007bff;
     padding: 20px;
-}
-
-.ajuda-conteudo {
-    color: white;
     text-align: center;
 }
 
-.pts {
-    padding-bottom: 80px;
+.voltar {
+    background-color: white; 
+    color: rgb(1, 1, 56); 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+.voltar a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.ajuda-conteudo {
+    text-align: center;
+    padding: 20px;
+}
+
+.pts, .trolls, .pagamento {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 .firsth1 {
-    padding-bottom: 40px;
+    margin-bottom: 20px; 
 }
 
-.terp {
-    padding-bottom: 80px;
+h2 {
+    color: #28a745; 
+}
+
+h4 {
+    margin: 10px 0;
 }

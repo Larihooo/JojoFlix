@@ -1,118 +1,144 @@
 body {
-    background-color: rgb(8, 29, 3)
-}
-
-.titulo {
-    color: white;
-    text-align: center;
-}
-
-.conteudo {
-    color: white;
-    text-align: center;
+    background-color: #004b0a; 
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 18px; 
+    line-height: 1.6; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 header {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px;
-    background-color: rgb(14, 188, 231);
-    border: solid 2px rgb(255, 255, 255);
-    padding-right: 10px;
-    text-align: end;
+    background-color: #007bff;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    position: relative; /* Para posicionar o botão corretamente */
+}
+
+.menu-button {
+    position: absolute; /* Para que o botão fique no canto superior esquerdo */
+    left: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Escondido inicialmente */
+    width: 250px;
+    height: 100%;
+    background: #007bff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000; /* Para estar acima de outros elementos */
+}
+
+.sidebar.active {
+    left: 0; /* Quando ativo, fica visível */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .barra-colorida {
-    background: rgb(14, 188, 231);
-    border: solid 2px rgb(255, 255, 255);
+    background: #007bff;
+    border: solid 2px white;
     justify-content: center;
 }
 
-.planos h2 {
-    color: rgb(0, 255, 115);
+.titulo {
+    color: #000000; 
+    text-align: center;
+    border-top: solid 3px #000000;
 }
 
-.planos h4 {
-    color: white;
-    border-bottom: solid 20px color rgb(0, 0, 0);
+.conteudo {
+    color: #555; 
+    text-align: center;
+    padding: 30px;
+    border: solid 2px black;
 }
 
-.planos {
-    color: white;
-    text-align: start;
-    padding-left: 40px;
-}
-
-.planos-2 h2 {
-    color: rgb(0, 174, 255);
-}
-
-.planos-2 h4 {
-    color: white;
-    border-bottom: solid 20px color rgb(0, 0, 0);
-}
-
-.planos-2 {
-    color: white;
-    text-align: end;
-    padding-right: 40px;
-}
-
-.termosfinal {
-    color: white;
-    font-size: small;
-}
-
-.barrinha {
-    padding: 200px ;
-    border-bottom: solid 2px rgb(255, 255, 255);
-}
-
-.planos-3 h2 {
-    color: rgb(255, 51, 0);
-}
-
-.planos-3 h4 {
-    color: white;
-    border-bottom: solid 20px color rgb(0, 0, 0);
-}
-
+.planos,
+.planos-2,
 .planos-3 {
-    color: white;
-    text-align: start;
-    padding-left: 40px;
+    display: flex; 
+    align-items: center; 
+    background-color: #f1f1f1; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    transition: transform 0.2s, background-color 0.3s; 
+    width: 80%; 
 }
 
-.barra {
-    text-align: start;
+.planos:hover,
+.planos-2:hover,
+.planos-3:hover {
+    transform: scale(1.02); 
+    background-color: #e0e0e0; 
 }
 
-body {
-    font-size: 40px;
+.plano-conteudo {
+    flex: 1; 
 }
 
-button {
-    font-size: 50px;
-}
-
-.planos h2 {
-    border-bottom: solid 2px rgb(255, 255, 255);
-    padding-left: 60px;
-}
-
-.planos-2 h2 {
-    border-bottom: solid 2px rgb(255, 255, 255);
-    padding-left: 60px;
-}
-
-.planos-3 h2 {
-    border-bottom: solid 2px rgb(255, 255, 255);
-    padding-left: 60px;
-}
-
-.botaoajuda {
-    font-size: small;
+.planos img,
+.planos-2 img,
+.planos-3 img {
+    margin-left: 20px; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 .comprarpts {
-    color: white;
+    color: #ffffff; 
+    text-align: center; 
+}
+
+.termosfinal {
+    color: #333; 
+    font-size: small;
+    padding: 20px; 
+    background-color: #fffcfc8c; 
+}
+
+footer {
+    margin-top: auto; /* Para fixar o rodapé no fundo */
+}
+
+button {
+    font-size: 20px; 
+}
+
+button a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+
+.paragrafo1,
+.paragrafo2 {
+    color: black;
+}
+
+.linhafinal {
+    border-top: black;
 }

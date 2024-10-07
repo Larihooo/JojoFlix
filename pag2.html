@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagamento - Plano Básico</title>
+    <link rel="stylesheet" href="pag2.css">
 </head>
+
 <body>
-    <h1>DEU CERTO DENOVO</h1>
-    <button><a href="index.html">Voltar</a></button>
+    <header class="cabeçalho">
+        <h1>Pagamento - Plano Básico</h1>
+    </header>
+
+    <section class="payment-info">
+        <h2>Plano Básico</h2>
+        <p>Valor: R$ 4,99 / mês</p>
+        <h4>Benefícios:</h4>
+        <ul>
+            <li>Alterar Apelido</li>
+            <li>Enviar Links</li>
+            <li>5 Trolls</li>
+            <li>+30 PTS (trocar por itens no Minecraft)</li>
+            <li>Anexar Arquivos</li>
+            
+        </ul>
+        <p>Por favor, preencha as informações abaixo para realizar o pagamento.</p>
+    </section>
+
+    <section class="payment-form">
+        <form action="confirmacao2.html" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Pagar R$ 1,99</button>
+        </form>
+    </section>
+
+    <footer class="termosfinal">
+        <p>Termos de Uso Última atualização: 06 de outubro de 2024. Ao acessar este site, você concorda em cumprir os
+            seguintes termos. Se não concordar, por favor, não utilize.</p>
+    </footer>
 </body>
+
 </html>
