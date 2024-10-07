@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(1, 1, 56);
+    font-size: 40px;
+}
+
+.cabeçalho {
+    color: white;
+    padding: 20px;
+}
+
+.ajuda-conteudo {
+    color: white;
+    text-align: center;
+}
+
+.pts {
+    padding-bottom: 80px;
+}
+
+.firsth1 {
+    padding-bottom: 40px;
+}
+
+.terp {
+    padding-bottom: 80px;
+}

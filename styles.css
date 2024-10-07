@@ -1,52 +1,118 @@
 body {
+    background-color: rgb(8, 29, 3)
+}
+
+.titulo {
     color: white;
-    background: rgb(0, 0, 0);
-    margin: 0px;
-    font-family: "Kanit", sans-serif;
-    margin-bottom: 100px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    text-align: center;
+}
+
+.conteudo {
+    color: white;
+    text-align: center;
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122, 22);
+    color: white;
     padding: 20px;
-    font-size: 32px;
-    color: rgb(42, 122, 22);
+    background-color: rgb(14, 188, 231);
+    border: solid 2px rgb(255, 255, 255);
+    padding-right: 10px;
+    text-align: end;
 }
 
-.chamada {
-   background: rgb(1, 48, 54);
-   padding-bottom: 80px;
-   padding-top: 80px;
-   display: flex;
-   justify-content: center;
-}
-.chamada-texto {
-    margin-right: 5%;
+.barra-colorida {
+    background: rgb(14, 188, 231);
+    border: solid 2px rgb(255, 255, 255);
+    justify-content: center;
 }
 
-.categoria-videos {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
+.planos h2 {
+    color: rgb(0, 255, 115);
 }
 
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-
+.planos h4 {
+    color: white;
+    border-bottom: solid 20px color rgb(0, 0, 0);
 }
 
-.categoria-videos img {
-   opacity: 0.5;
-   height: 200px;
+.planos {
+    color: white;
+    text-align: start;
+    padding-left: 40px;
 }
 
-.categoria-videos img:hover {
-    opacity: 1.0;
-    border: 3px solid yellow;
+.planos-2 h2 {
+    color: rgb(0, 174, 255);
 }
-.categoria h2 {
-    color: green;
+
+.planos-2 h4 {
+    color: white;
+    border-bottom: solid 20px color rgb(0, 0, 0);
+}
+
+.planos-2 {
+    color: white;
+    text-align: end;
+    padding-right: 40px;
+}
+
+.termosfinal {
+    color: white;
+    font-size: small;
+}
+
+.barrinha {
+    padding: 200px ;
+    border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+.planos-3 h2 {
+    color: rgb(255, 51, 0);
+}
+
+.planos-3 h4 {
+    color: white;
+    border-bottom: solid 20px color rgb(0, 0, 0);
+}
+
+.planos-3 {
+    color: white;
+    text-align: start;
+    padding-left: 40px;
+}
+
+.barra {
+    text-align: start;
+}
+
+body {
+    font-size: 40px;
+}
+
+button {
+    font-size: 50px;
+}
+
+.planos h2 {
+    border-bottom: solid 2px rgb(255, 255, 255);
+    padding-left: 60px;
+}
+
+.planos-2 h2 {
+    border-bottom: solid 2px rgb(255, 255, 255);
+    padding-left: 60px;
+}
+
+.planos-3 h2 {
+    border-bottom: solid 2px rgb(255, 255, 255);
+    padding-left: 60px;
+}
+
+.botaoajuda {
+    font-size: small;
+}
+
+.comprarpts {
+    color: white;
 }
